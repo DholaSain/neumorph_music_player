@@ -44,7 +44,7 @@ class _SongScreenState extends State<SongScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomPadding: false,
+      // resizeToAvoidBottomPadding: false,
       backgroundColor: Color(0XFF2e2e2e),
       body: Container(
         height: MediaQuery.of(context).size.height,
@@ -218,7 +218,12 @@ class _SongScreenState extends State<SongScreen> {
                       blurRadius: 3.0,
                     ),
                   ],
-                  gradient: LinearGradient(colors: [Colors.red, Colors.amber]),
+                  gradient: LinearGradient(
+                    colors: [
+                      Colors.red,
+                      Colors.amber,
+                    ],
+                  ),
                 ),
               ),
               handler: FlutterSliderHandler(
@@ -434,7 +439,7 @@ class _SongScreenState extends State<SongScreen> {
           shape: BoxShape.circle,
           gradient: LinearGradient(
               begin: Alignment.topLeft,
-              colors: [Colors.red[900],Colors.deepOrange[700]]),
+              colors: [Colors.red[900], Colors.deepOrange[700]]),
         ),
         child: Padding(
           padding: EdgeInsets.all(9.6 * Responsive.imageSizeMultiplier),
